@@ -22,12 +22,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={montserrat.className}>
-        <div className="arvr-research">
-          <NavigationBar></NavigationBar>
-          {children}
-          <Footer></Footer>
-        </div>
+      <body
+      // className={montserrat.className}
+      >
+        {/* <div className="arvr-research"> */}
+        {/* <NavigationBar></NavigationBar> */}
+        {children}
+        {/* <Footer></Footer> */}
+        {/* </div> */}
       </body>
     </html>
   );

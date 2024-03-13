@@ -24,9 +24,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={montserrat.className}>
         <div className="arvr-research">
-          <NavigationBar></NavigationBar>
           {children}
-          <Footer></Footer>
         </div>
       </body>
     </html>

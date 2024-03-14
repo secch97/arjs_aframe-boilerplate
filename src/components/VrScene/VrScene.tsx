@@ -7,7 +7,7 @@ const VrScene = () => {
       <a-marker type="pattern" url="/pattern-marker.patt">
         <a-plane
           id="imagePlane"
-          position="0 0 0"
+          position="0 -1 0"
           rotation="-90 0 0"
           width="4"
           height="2.25"

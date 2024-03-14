@@ -28,7 +28,7 @@ body {
     )
     fixed;
   background-size: cover;
-
+  overflow: hidden;
 }
 
 h1 {
@@ -54,7 +54,7 @@ a {
   justify-content: center;
   /* Sizing */
   width: 100%;
-  min-height: 100vh;
+  margin-top: auto;
 }
 
 .examples-container {

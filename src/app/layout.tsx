@@ -23,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <header>
-      <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+      <script src="https://aframe.io/releases/1.5.0/aframe.min.js" async></script>
 
       </header>
       <body className={montserrat.className}>

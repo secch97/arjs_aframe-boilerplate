@@ -1,7 +1,18 @@
-import React from "react";
+'use client';
 
-const FirstExample = () => {
-  return <h1> This is the first example </h1>;
-};
+import React, { useEffect, useState } from "react";
+import dynamic from "next/dynamic";
 
-export default FirstExample;
+const DynamicVrScene = dynamic(() => import('../../../components/VrScene/VrScene'), {
+  ssr: false,
+})
+
+function FirstExamplePage() {
+  return (
+    <>
+      <DynamicVrScene></DynamicVrScene>
+    </>
+  );
+}
+
+export default FirstExamplePage;

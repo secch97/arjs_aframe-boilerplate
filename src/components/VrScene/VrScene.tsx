@@ -5,10 +5,14 @@ import { Entity, Scene } from "aframe-react";
 
 const VrScene = () => {
   return (
-    <Scene vr-mode-ui="enabled: false">
-      {/* <a-assets>
-        <a-asset-item id="bulbasaur" src="/table/bulbasaur.glb"></a-asset-item>
-      </a-assets> */}
+    <Scene>
+              <Entity
+          id="sphere" geometry="primitive: sphere"
+          material="color: #EFEFEF; shader: flat"
+          position="0 0 0"
+          light="type: point; intensity: 5"
+          animation="property: position; easing: easeInOutQuad; dir: alternate; dur: 1000; to: 0 -0.10 -5; loop: true"
+        ></Entity>
       <Entity
         gltf-model="https://arjs-aframe-boilerplate.vercel.app/table/scene.gltf"
         position="2 0 -5"

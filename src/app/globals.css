@@ -28,6 +28,8 @@ body {
     )
     fixed;
   background-size: cover;
+  overflow-y: hidden;
+  overflow-x: hidden;
 }
 
 h1 {

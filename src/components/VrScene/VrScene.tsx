@@ -11,8 +11,7 @@ const VrScene = () => {
       </a-assets> */}
       <Entity
         gltf-model="https://arjs-aframe-boilerplate.vercel.app/table/scene.gltf"
-        scale={{ x: 0.75, y: 0.75, z: 0.75 }}
-        position={{ x: 0, y: 0, z: -5 }}
+        position="2 0 -5"
       />
     </Scene>
   );

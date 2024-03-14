@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import "aframe";
 import "ar.js";
@@ -5,16 +6,14 @@ import { Entity, Scene } from "aframe-react";
 
 const VrScene = () => {
   return (
-    <Scene vr-mode-ui="enabled: false">
-      <a-assets>
-        <a-asset-item id="bulbasaur" src="/bulbasaur.glb"></a-asset-item>
-      </a-assets>
-      <Entity
-        gltf-model="#bulbasaur"
-        scale={{ x: 0.75, y: 0.75, z: 0.75 }}
-        position={{ x: 0, y: 0, z: -5 }}
-      />
-    </Scene>
+    <a-scene
+      vr-mode-ui="enabled: false"
+      arjs="sourceType: webcam; videoTexture: true; debugUIEnabled: false"
+      renderer="antialias: true; alpha: true"
+    >
+      <a-box position="0 0 0" material="opacity: 1;"></a-box>
+      <a-marker-camera preset="hiro"></a-marker-camera>
+    </a-scene>
   );
 };
 

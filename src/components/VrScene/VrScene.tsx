@@ -33,7 +33,9 @@ const VrScene = () => {
         gltf-model="https://arjs-aframe-boilerplate.vercel.app/table/scene.gltf"
         position="3 3 -5"
       />
-        <Entity primitive="a-camera">
+        <Entity primitive="a-camera"
+        position="0 0.5 2" look-controls-enabled="false"
+        >
           {/* <Entity primitive="a-cursor" animation__click={{ property: 'scale', startEvents: 'click', from: '0.1 0.1 0.1', to: '1 1 1', dur: 150 }} /> */}
         </Entity>
     </Scene>

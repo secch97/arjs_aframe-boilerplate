@@ -1,8 +1,8 @@
 'use client';
-
+import "aframe";
+import "ar.js";
 import { Entity, Scene } from "aframe-react";
 import React, { useEffect, useState } from "react";
-
 
 function ARpage() {
   return (

@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
 import "./globals.css";
-import NavigationBar from "@/components/NavigationBar/NavigationBar";
-import Footer from "@/components/Footer/Footer";
+
 
 import { config } from "@fortawesome/fontawesome-svg-core";
 import "@fortawesome/fontawesome-svg-core/styles.css";
+import Script from "next/script";
 config.autoAddCss = false;
 
 const montserrat = Montserrat({ subsets: ["latin"] });
@@ -22,6 +22,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+      <Script src="https://aframe.io/releases/1.5.0/aframe.min.js"></Script>
+      <Script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></Script>
+      </head>
       <body className={montserrat.className}>
         <div className="arvr-research">
           {children}

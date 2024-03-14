@@ -37,6 +37,7 @@ h1 {
   font-weight: bold;
   /* Text */
   text-transform: uppercase;
+  text-align: center;
 }
 
 a {
@@ -227,4 +228,10 @@ footer {
   margin-top: auto;
   /* Sizing */
   width: 100%;
+}
+
+@media (max-width:580px){
+  h1{
+    font-size: 16px;
+  }
 }

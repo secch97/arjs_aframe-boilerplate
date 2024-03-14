@@ -2,9 +2,29 @@
 import "aframe";
 import "ar.js";
 import { Entity, Scene } from "aframe-react";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 function ARpage() {
+
+    useEffect(() => {
+        const initAFrame = async () => {
+            // Dynamically import 'aframe'
+            const AFrame = await import('aframe');
+            // You can use AFrame here
+            console.log(AFrame);
+        }
+        initAFrame();
+    }, []);
+
+    useEffect(() => {
+        const initARJS = async () => {
+            // Dynamically import 'ar.js'
+            const ARJS = await import('ar.js');
+            // You can use ARJS here
+            console.log(ARJS);
+        }
+        initARJS();
+    }, []);
   return (
     <>
       <Scene vr-mode-ui="enabled: false">

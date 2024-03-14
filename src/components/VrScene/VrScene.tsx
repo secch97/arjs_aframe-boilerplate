@@ -23,35 +23,15 @@ const VrScene = () => {
         <Entity text={{ value: 'Hello, A-Frame React!', align: 'center' }} position={{ x: 0, y: 2, z: -1 }} /> */}
       <Entity
         gltf-model="https://arjs-aframe-boilerplate.vercel.app/table/scene.gltf"
-        position="2 0 -5"
+        position="2 1 -5"
       />
           <Entity
         gltf-model="https://arjs-aframe-boilerplate.vercel.app/table/scene.gltf"
-        position="1 0 -5"
+        position="1 2 -5"
       />
           <Entity
         gltf-model="https://arjs-aframe-boilerplate.vercel.app/table/scene.gltf"
-        position="3 0 -5"
-      />
-          <Entity
-        gltf-model="https://arjs-aframe-boilerplate.vercel.app/table/scene.gltf"
-        position="4 0 -5"
-      />
-          <Entity
-        gltf-model="https://arjs-aframe-boilerplate.vercel.app/table/scene.gltf"
-        position="5 0 -5"
-      />
-          <Entity
-        gltf-model="https://arjs-aframe-boilerplate.vercel.app/table/scene.gltf"
-        position="6 0 -5"
-      />
-          <Entity
-        gltf-model="https://arjs-aframe-boilerplate.vercel.app/table/scene.gltf"
-        position="7 0 -5"
-      />
-          <Entity
-        gltf-model="https://arjs-aframe-boilerplate.vercel.app/table/scene.gltf"
-        position="8 0 -5"
+        position="3 3 -5"
       />
         <Entity primitive="a-camera">
           {/* <Entity primitive="a-cursor" animation__click={{ property: 'scale', startEvents: 'click', from: '0.1 0.1 0.1', to: '1 1 1', dur: 150 }} /> */}

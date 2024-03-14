@@ -7,7 +7,6 @@ const Homepage = () => {
   return (
     <>
       <NavigationBar></NavigationBar>
-
       <div className="examples-container">
         <h1> A-Frame/AR.js + Next.js</h1>
         <ul className="examples-list">

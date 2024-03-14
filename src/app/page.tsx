@@ -7,15 +7,17 @@ const Homepage = () => {
   return (
     <>
       <NavigationBar></NavigationBar>
-      <div className="examples-container">
-        <h1> A-Frame/AR.js + Next.js</h1>
-        <ul className="examples-list">
-          <li className="example">
-            <Link href={"/examples/first-example"}>
-              Simple Example with A-Frame
-            </Link>
-          </li>
-        </ul>
+      <div className="arvr-research">
+        <div className="examples-container">
+          <h1> A-Frame/AR.js + Next.js</h1>
+          <ul className="examples-list">
+            <li className="example">
+              <Link href={"/examples/first-example"}>
+                Simple Example with A-Frame
+              </Link>
+            </li>
+          </ul>
+        </div>
       </div>
       <Footer></Footer>
     </>

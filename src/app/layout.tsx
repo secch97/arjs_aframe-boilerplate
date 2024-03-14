@@ -27,9 +27,7 @@ export default function RootLayout({
       <Script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></Script>
       </head>
       <body className={montserrat.className}>
-        <div className="arvr-research">
           {children}
-        </div>
       </body>
     </html>
   );

@@ -1,4 +1,3 @@
-
 declare namespace JSX {
   interface IntrinsicElements {
       'a-scene': any,
@@ -9,5 +8,8 @@ declare namespace JSX {
       "a-sky": any,
       "a-marker": any,
       "a-entity": any,
+      "a-gltf-model": any,
+      "a-assets": any,
+      "a-asset-item": any,
   }
 }
